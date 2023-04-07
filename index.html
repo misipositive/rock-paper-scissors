@@ -1,56 +1,29 @@
-<<<<<<<<< Temporary merge branch 1
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Rock Paper Scissors Game</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="dark-layer">
-      <div class="game-container">
-        <h1 class="game-title">Rock Paper Scissors</h1>
-        <div class="score-container">
-          <p class="player-score">Player: 0</p>
-          <p class="computer-score">Computer: 0</p>
-        </div>
-        <div class="button-container">
-          <button class="btn" id="rock">Rock</button>
-          <button class="btn" id="paper">Paper</button>
-          <button class="btn" id="scissors">Scissors</button>
-        </div>
-        <div class="result-container">
-          <h2 class="result-text">Make Your Move!</h2>
-        </div>
-      </div>
+<head>
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Rock Paper Scissors Game</h1>
+  <div class="game-container">
+    <div class="player-container">
+      <h2>You</h2>
+      <img src="rock.png" alt="rock" class="option" id="rock">
+      <img src="paper.png" alt="paper" class="option" id="paper">
+      <img src="scissors.png" alt="scissors" class="option" id="scissors">
     </div>
-    <script src="script.js"></script>
-  </body>
-</html>
-=========
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Rock Paper Scissors Game</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="dark-layer">
-      <div class="game-container">
-        <h1 class="game-title">Rock Paper Scissors</h1>
-        <div class="score-container">
-          <p class="player-score">Player: 0</p>
-          <p class="computer-score">Computer: 0</p>
-        </div>
-        <div class="button-container">
-          <button class="btn" id="rock">Rock</button>
-          <button class="btn" id="paper">Paper</button>
-          <button class="btn" id="scissors">Scissors</button>
-        </div>
-        <div class="result-container">
-          <h2 class="result-text">Make Your Move!</h2>
-        </div>
-      </div>
+    <div class="score-container">
+      <h2>Score</h2>
+      <p>You: <span id="player-score">0</span></p>
+      <p>Computer: <span id="computer-score">0</span></p>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div class="computer-container">
+      <h2>Computer</h2>
+      <img src="" alt="computer choice" class="option" id="computer-choice">
+    </div>
+  </div>
+  <button id="reset-btn">Reset Game</button>
+  <script src="script.js"></script>
+</body>
 </html>
