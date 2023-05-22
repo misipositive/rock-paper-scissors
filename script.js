@@ -4,6 +4,7 @@ const playerScore = document.getElementById('player-score');
 const computerScore = document.getElementById('computer-score');
 const computerChoice = document.getElementById('computer-choice');
 const resetButton = document.getElementById('reset-btn');
+const rockimg = document.getElementById('rock')
 let playerScoreCount = 0;
 let computerScoreCount = 0;
 
@@ -42,14 +43,16 @@ function updateScore(playerChoice, computerChoice) {
 }
 
 // Function to reset game
+
 function resetGame() {
   playerScoreCount = 0;
   computerScoreCount = 0;
   playerScore.textContent = playerScoreCount;
   computerScore.textContent = computerScoreCount;
-  computerChoice.src = 'rock.png';
   computerChoice.style.opacity = 0.1;
 }
+
+resetButton.addEventListener('click', resetGame);
 
 // Event listeners for player's choice
 options.forEach((option) => {

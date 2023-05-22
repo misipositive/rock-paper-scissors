@@ -4,7 +4,9 @@ body {
   transition: background-color 0.2s ease;
 }
 
-
+#computer-choice {
+  opacity: 50%;  
+}
 
 .overlay {
   position: fixed;
